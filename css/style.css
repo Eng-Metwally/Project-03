@@ -1,0 +1,375 @@
+body {
+    background-color: rgba(128, 128, 128, 0.1);
+}
+/* navbar - Start */
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+}
+/* navbar - Start */
+
+/* Carousel - Start */
+#mycarousel {
+    margin-top: 106px; 
+}
+.modal {
+    z-index: 2000;
+}
+.trips:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+.trips:hover .trips-span {
+    color: mediumvioletred;
+    font-weight: bold;
+}
+.carousel img {
+    height: 80vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.dropdown-menu {
+    background-color: rgba(247, 235, 235, 0.9);
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 50px;
+  width: 50px;
+}
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 20px;
+    left: 15%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgba(135, 226, 238, 0.5);
+}
+/* Carousel - Start */
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    right: 50px;
+    font-size: 80px;
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 1;
+    position: fixed;
+    top: 50%;
+    transform: translate(-17%, -40%);
+}
+.social-icons i {
+    margin: 20px 0px;
+    color: #166088;
+}
+.gradient-text {
+    background: -webkit-linear-gradient(top, #d84641, #9b59b6, #0011ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.card {
+    background : -webkit-linear-gradient(top, #ebcaca, #f3f0f5);
+    border-top-left-radius:0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.card-link:hover {
+    color: gray;
+}
+.accordion-arrow {
+    float: right;
+    transition: transform 0.6s ease;
+}
+.rotate {
+    transform: rotate(180deg);
+}
+textarea {
+    resize: none;
+}
+.copy-btn {
+    position: relative;
+}
+.copy-btn .span-copy {
+    position: absolute;
+    background-color: #ade8f4;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    min-width: 100px;
+    padding: 10px;
+    border-radius:0px 20px 20px;
+    top: 50px;
+    left: 80px;
+    visibility: hidden;
+}
+.copy-btn .span-copyed {
+    position: absolute;
+    background-color: #ade8f4;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    min-width: 70px;
+    padding: 10px;
+    border-radius:0px 20px 20px;
+    top: 50px;
+    left: 80px;
+    visibility: hidden;
+}
+.copy-btn:hover .span-copy {
+    visibility: visible;
+}
+.copy-btn:focus .span-copy {
+    visibility: hidden;
+}
+.copy-btn:focus .span-copyed {
+    visibility: visible;
+}
+.transalte-modal .modal-content {
+    padding: 20px;
+}
+.transalte-modal .rtl {
+    direction: rtl;
+    padding: 10px;
+}
+.rtl button {
+    width: 110px;
+}
+.fixed-photo {
+    height: 500px;
+    position: relative;
+    background-image: url(../images/fixed-photo.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.fixed-photo-2 {
+    height: 500px;
+    position: relative;
+    background-image: url(../images/fixed-photo-02.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.card img {
+    width: 90%;
+    height: 500px;
+    margin: auto;
+}
+.card-overlay {
+    position: relative;
+    overflow: hidden;
+}
+  .card-overlay::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top:0;
+    left:0;
+    background-color: rgba(173, 232, 244, 0.4); 
+    transition: 1s;
+    pointer-events: none;
+  }
+  .card-overlay:hover::after {
+    width: 100%;
+    height: 100%;
+  }
+  .card-overlay::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    bottom:0;
+    right:0;
+    background-color: rgba(173, 232, 244, 0.4); 
+    transition: 1s;
+    pointer-events: none;
+  }
+  .card-overlay:hover::before {
+    width: 100%;
+    height: 100%;
+  }
+.image-overlay{
+    position: relative;
+    overflow: hidden;
+}
+.image-overlay::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background-color: rgba(60, 211, 241, 0.6); 
+}
+.card.img-fluid {
+    transition: transform 0.3s ease-in-out;
+}
+.card.img-fluid:hover {
+    transform: scale(0.9);
+}
+/* Egypt News - Start */
+.egypt-news-item {
+    height: 450px;
+    width: 80%;
+    margin: auto;
+    border-radius: 3px;
+    box-shadow: 1px 1px 20px 10px rgba(188, 117, 209);
+    padding: 20px;
+}
+.egypt-news-item p {
+    line-height: 1.8;
+    word-spacing: 10px;
+}
+.egypt-news img {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 10% 100%);
+    height: 100%;
+}
+.line {
+    width: 70px;
+    height: 6px;
+    background-color: #39a4b9;
+    border-radius: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+.egypt-news-item:hover .line {
+    width: 150px;
+}
+.line-2 {
+    width: 70px;
+    height: 6px;
+    background-color: #b9396a;
+    border-radius: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+.egypt-news-item:hover .line-2 {
+    width: 150px;
+}
+.line-3 {
+    width: 70px;
+    height: 6px;
+    background-color: #8dad18;
+    border-radius: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+.egypt-news-item:hover .line-3 {
+    width: 150px;
+}
+.line-4 {
+    width: 70px;
+    height: 6px;
+    background-color: #70752b;
+    border-radius: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+.egypt-news-item:hover .line-4 {
+    width: 150px;
+}
+.episode:hover {
+    background-color: #3957b9;
+    color: black;
+}
+.episode-2:hover {
+    background-color: #d84641;
+}
+.episode-3:hover {
+    background-color: #89d334;
+}
+.episode-4:hover {
+    background-color: #828837;
+}
+.egypt-news .left-photo {
+    clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
+@media (max-width : 567px) {
+    .egypt-news-parent {
+        display: flex;
+        flex-direction: column;
+    }
+    .egypt-news-item {
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+    .join-us {
+        flex-direction: column;
+    }
+    .join-us .join-us-item {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .last-Section {
+        column-count: 1;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        font-size: 10px;
+
+    }
+    .last-Section .h3 , h1 , h5 {
+        font-size: 16px;
+        text-align:center;
+    }
+}
+/* Egypt News - End */
+/* Join-us - Start */
+.join-us {
+    display: flex;
+    justify-content:space-between;
+    width: 80%;
+    margin: auto;
+}
+.join-us-item {
+    padding: 20px 0px;
+    width: 22%;
+    border-radius: 3px;
+    box-shadow: 1px 1px 20px 10px rgb(188, 123, 209);
+    vertical-align: middle;
+}
+.join-us-item img {
+    width: 150px;
+    height: 150px;
+}
+/* Join-us - End */
+/* Last Section - Start */
+.last-Section {
+    column-count : 3 ;
+    column-gap : 0px;
+    text-align: center;
+}
+.last-section-parent {
+    background-color: #00a8e8;
+}
+.last-Section a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.last-Section a:hover {
+    color: #89d334;
+}
+.footer-line {
+    width: 29vw;
+    height: 5px;
+    background-color: rgb(26, 89, 100);
+}
+.footer-line-last {
+    width: 100%;
+    height: 5px;
+    background-color: rgb(26, 89, 100);
+}
